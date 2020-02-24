@@ -3,8 +3,8 @@ package bylinkedlist;
 
 
 public class LinketList1{
+    private static Node first;
     Person person;
-    private Node first;
     private Node last;
 
     public void addLast(Person person){
@@ -45,11 +45,11 @@ public class LinketList1{
         return false;
     }
 
-    public int indexOf(String firstName){
+    public static int indexOf(String firstName) {
         Node currently = first;
-        int response=0;
-        while(currently!=null){
-            if(currently.getValue().getFirstName().equals(firstName)){
+        int response = 0;
+        while (currently != null) {
+            if (currently.getValue().getFirstName().equals(firstName)) {
                 return response;
             }
             response++;
